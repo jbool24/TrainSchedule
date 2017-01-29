@@ -26,7 +26,7 @@
         <div class="row">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <table id="train-schedule" class="table">
+                    <table id="train-schedule" class="table table-striped">
                         <thead>
                             <tr>
                                 <th>Train Name</th>
@@ -36,7 +36,7 @@
                                 <th>Minutes Away</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody >
 
                         </tbody>
                     </table>
@@ -51,12 +51,28 @@
                 </div>
                 <div class="panel-body">
                     <form class="newTrain" action="index.html" method="post">
-                        <div class="form-group">
-                            <label for="trainName">Train Name</label>
-                            <input id="trainName" class="form-control" type="text" name="trainName" placeholder="Chatanuga Train">
+                        <div class="form-group row">
+                            <div class="col-sm-2">
+                                <label for="trainName">Train Name</label>
+                            </div>
+                            <div class="col-sm-10">
+                                <input id="trainName" class="form-control" type="text" name="trainName" placeholder="Chatanuga Train">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                          <div class="col-sm-2">
                             <label for="trainDestination">Destination</label>
+                          </div>
+                          <div class="col-sm-10">
                             <input id="trainDestination" class="form-control" type="text" name="trainDestination" value="">
+                            <p class="help-block">Where is the train going?</p>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <div class="col-sm-2">
                             <label for="trainFrequency">Train Frequency:</label>
+                          </div>
+                          <div class="col-sm-10">
                             <select id="trainFrequency" class="form-control" name="trainFrequency" value="">
                               <option value="10">10</option>
                               <option value="15">15</option>
@@ -64,14 +80,28 @@
                               <option value="30">30</option>
                               <option value="60">60</option>
                             </select>
-                            <label for="trainStarts">Train Starts:</label>
-                            <input id="trainStarts" class="form-control" name="trainFrequency" value="">
-                            <button class="btn-primary add-train" type="submit" name="button" style="margin-top: 20px">Add Train</button>
+                            <p class="help-block">How often does it run?</p>
+                          </div>
                         </div>
-                    </form>
+                        <div class="form-group row">
+                          <div class="col-sm-2">
+                            <label for="trainStarts">Train Starts:</label>
+                          </div>
+                          <div class="col-sm-5">
+                            <input id="trainStartsDate" type="date" class="form-control inline">
+                          </div>
+                          <div class="col-sm-5">
+                            <input id="trainStartsTime"type="time" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <button class="form-control btn-primary add-train" type="submit" name="button" style="margin-top: 20px">Add Train</button>
+                        </div>
                 </div>
+                </form>
             </div>
         </div>
+    </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
