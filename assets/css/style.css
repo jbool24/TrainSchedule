@@ -6,9 +6,5 @@ body {
 }
 
 form {
-  padding: 10px;
-}
-
-button.add-train {
-    margin: 0 10px;
+    padding: 20px;
 }
