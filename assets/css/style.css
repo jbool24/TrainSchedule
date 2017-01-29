@@ -1,0 +1,14 @@
+body {
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+form {
+  padding: 10px;
+}
+
+button.add-train {
+    margin: 0 10px;
+}
